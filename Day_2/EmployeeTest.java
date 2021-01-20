@@ -1,25 +1,20 @@
-package com.cap.day2.pkg1;
+package com.cap.day2.pkg2;
 
+import java.util.Date;
+import static java.lang.Math.*;
+
+import com.cap.day2.pkg1.Employee;
 
 public class EmployeeTest {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Employee emp = new Employee();
-		emp.name = "Aman";
-		emp.id =2;
-		emp.salary = 25000;
-		System.out.println(emp.name);
-		System.out.println(emp.incrementSalary());
-		System.out.println(emp.salary);
-		
-		Employee emp2 = new Employee(5,"Arish",25830);
-		Employee emp3 = new Employee(8,"Akash",22100);
-		System.out.println(emp2.name + " " + emp2.salary);
-		System.out.println(emp3.name);
-		System.out.println(emp3.toString()); // @ + somehexacode
-		System.out.println(emp2.toString());
-		System.out.println(emp);
-	}
 
+	Employee emp = new Employee();
+	System.out.println(Employee.companyName);
+	Date today = new Date();
+	System.out.println(today);
+	//calling static methods
+	System.out.println(ceil(4.6));
+	System.out.println(floor(3.6));
+	
+}
 }
